@@ -1,0 +1,92 @@
+<am<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edisi Lebaran</title>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <style>
+        .gallery{
+            display: flex;
+            gap: 20px;
+        }
+        .gallery img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+    <div class="wrapper">
+    <aside class="sidebar">
+    <ul>
+    <li><a href="#" onclick="showContent('home')">Home</a></li>
+    <li><a href="#" onclick="showContent('tradisi')">Tradisi</a></li>
+    <li><a href="#" onclick="showContent('ucapan selamat')">Ucapan Selamat</a></li>
+    </ul>
+    </aside>
+    <main class="content">
+    <section id="home" class="content-section">
+    <h1>Selamat Hari Raya Idul Fitri. </h1>
+    <p>Rayakan momen spesial ini dengan penuh kebahagiaan. </p>
+    <img src="IMG-20250331-WA0013.jpg" alt="" class="responsive-img">
+    </section>
+    <section id="tradisi" class="content-section" style="display:none;">
+    <h1>Tradisi Lebaran.</h1>
+    <p>Berikut adalah beberapa momen lebaran di rumah nenek.</p>
+    <h1 style="text-align: center;"></h1>
+    <div class="gallery">
+        <img src="foto1.jpg" alt="Foto 1">
+        <img src="foto4.jpg" alt="Foto 4">
+        <div class="caption">Silaturrahmi dengan Keluarga Besar di Rumah Nenek</div>
+    </div>
+    <div>
+        <h1 style="text-align: center;"></h1>
+        <div class="gallery">
+        <img src="IMG-20250331-WA0013.jpg" alt="IMG-20250331-WA0013">
+        <img src="foto7.jpg" alt="foto7">
+        <div class="caption">Foto Bersama Sepupu</div>
+    </div>   
+    <div>
+        <h1 style="text-align: center;"></h1>
+        <div class="gallery">
+        <img src="foto3.jpg" alt="Foto 3">
+        <img src="foto6.jpg" alt="Foto 6">
+        <div class="caption">Lebaran ke-3 Liburan Bersama Keluarga di Pantai Natal</div>
+    </div> 
+    <div>
+        <h1 style="text-align: center;"></h1>
+        <div class="gallery">
+        <img src="foto5.jpg" alt="Foto 5">
+        <img src="foto8.jpg" alt="Foto 8">
+        <div class="caption">Lebaran ke-4 Masih Liburan Bersama Keluarga di Pulau Karo</div>
+    </div> 
+    <div>
+        <h1 style="text-align: center;"></h1>
+        <div class="gallery">
+        <img src="foto9.jpg" alt="Foto 9">
+        <img src="foto10.jpg" alt="Foto 10">
+        <div class="caption">Lebaran ke-6 Jalan-Jalan Ke Pantai Bersama Teman-Teman</div>
+    </div> 
+    </section>
+
+    <section id="ucapan selamat" class="content-section" style="display:none;">
+    <h1>Ucapan selamat</h1>
+    <img src="foto2.jpg" alt="" class="responsive-img">
+    <h1>Selamat Hari Raya Idul FitrI, Mohon Maaf Lahir Dan Batin</h1>
+    </section>
+    </main>
+    </div>
+    <footer class="footer">
+    <p>Desain by Nurul Hidayah Sipayung</p>
+    </footer>
+    <script>
+    function showContent(sectionId) {
+    let sections = document.querySelectorAll('.content-section'); sections.forEach(section => section.style.display = 'none');
+    document.getElementById(sectionId).style.display = 'block';
+}
+</script>
+</body>
+</html>
